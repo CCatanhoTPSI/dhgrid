@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title>Exemplo CSS GRID</title>
+    <style>
+      .img {
+        width: 10px;
+        height: 10px;
+      }
+      .card1 
+      {
+        border: 5px solid green;
+        width: 190px;
+        height: 50px;
+        margin: 10px;
+        padding: 20px;
+        grid-area: areal;
+      }
+      .card2, .card3, .card4, .card5, .card6{
+        border: 5px solid green;
+        width: 50px;
+        height: 50px;
+        padding: 20px;
+        margin: 10px;
+      }
+      main {
+        display: grid;
+        grid-template-areas: 
+        "areal areal ."
+        "areal areal .";
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+        <div class="card1">
+            <p> Slot_1 </p>
+        </div>
+         <div class="card2">
+            <p> Slot_2 </p>
+            <img src="Img/market.png"/>
+        </div>
+         <div class="card3">
+            <p> Slot_3 </p>
+        </div>
+         <div class="card4">
+            <p> Slot_4 </p>
+        </div>
+         <div class="card5">
+            <p> Slot_5 </p>
+        </div>
+         <div class="card6">
+            <p> Slot_6 </p>
+        </div>
+    </main>
+  </body>
+</html>
